@@ -1,0 +1,246 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	transition: all .3s !important;
+}
+
+body {
+	overflow: hidden;
+	font-family: "RobotoLight";
+}
+
+.left {
+	color: #29ABE2;
+	cursor: pointer;
+}
+
+.left:hover {
+	color: #5FC4F0;
+}
+
+.right {
+	position: absolute;
+	right: 0;
+	top: 45%;
+	font-size: 11vh;
+	cursor: pointer;
+	color: #222;
+}
+
+.right:hover {
+	color: #1DED7E;
+}
+
+/*****************************************************************************************
+****************************************** BODY ******************************************
+******************************************************************************************/
+
+.body {
+	width: 500%;
+	top: 0;
+}
+
+.main,
+.about,
+.result,
+.teacher,
+.contacts {
+	position: absolute;
+	top: 400%;
+	height: 100%;
+	width: 100%;
+	padding: 0 10% !important;
+	color: #fff;
+	font-size: 20px;
+}
+
+.main p,
+.about p,
+.result p,
+.teacher p,
+.contacts p {
+	margin-top: 5%;
+	font-size: 3.5vh;
+}
+
+.about h1,
+.result h1,
+.teacher h1,
+.contacts h1 {
+	padding-top: 10vh;
+	text-align: center;
+	color: #fff;
+	font-size: 7vh;
+}
+
+.abouts,
+.results,
+.teachers {
+	overflow-y: scroll;
+	width: 100%;
+	height: 100%;
+	margin-left: -100%;
+	position: fixed;
+	z-index: 100;
+	background: url(../img/road.jpg) no-repeat bottom;
+	background-size: cover;
+	background-position: fixed;
+}
+
+.abouts .container,
+.results .container,
+.teachers .container {
+	background: #fff;
+	border-radius: 1vh;
+	padding: 2vw;
+	margin: 5vw;
+	color: #222;
+}
+
+.abouts .container h1,
+.results .container h1,
+.teachers .container h1 {
+	margin: 30px;
+}
+
+.abouts .container img,
+.results .container img,
+.teachers .container img {
+	margin-left: 15%;
+	width: 70%;
+	border-top: 7vh solid #222;
+}
+
+.abouts .container p,
+.results .container p,
+.teachers .container p {
+	margin: 30px;
+}
+
+.abouts .container .img-bottom,
+.results .container .img-bottom,
+.teachers .container .img-bottom {
+	position: absolute;
+	left: 0;
+	color: #fff;
+	margin-left: 21%;
+	font-size: 3vh;
+	line-height: 7vh;
+}
+
+/*************************************************
+******************** CHECKBOX ********************
+*************************************************/
+
+.checboxies {
+	position: fixed;
+	z-index: 2 !important;
+	height: 70%;
+	width: 10vh;
+	top: 15%;
+	right: 2%;
+}
+
+.checked {
+	position: absolute;
+	background: #1DED7E !important;
+	box-shadow: 0 1px 10px rgba(255,255,255,.5);
+}
+
+.check {
+	margin-top: 2vh;
+	border-radius: 50%;
+	height: 10vh;
+	width: 10vh;
+	background: #eee;
+}
+
+.check:hover {
+	background: #1DED7E;
+}
+
+.check span {
+	display: none;
+	background: #fff;
+	text-align: center;
+	border-radius: 3px;
+	line-height: 10vh;
+	color: #555;
+}
+
+.check:hover span {
+	display: block;
+	margin-left: -100%;
+}
+
+.line {
+	top: 2vh;
+	left: 45%;
+	position: absolute;
+	width: 5%;
+	height: 50vh;
+	background: #1DED7E;
+	z-index: -1;
+}
+
+/*************************************************
+********************** MAIN **********************
+*************************************************/
+
+.main {
+	top: 0;
+	background: #62C140;
+	background: url(../img/background.jpg) no-repeat;
+	background-size: cover 120%;
+}
+
+.main .image {
+	padding-top: 20vh;
+	text-align: center;
+	color: #fff;
+	font-size: 5vh;
+}
+
+.main p {
+	font-size: 4vh;
+}
+
+/*************************************************
+********************* ABOUTs *********************
+*************************************************/
+
+.about {
+	top: 100%;
+	background: #58696A;
+}
+
+/*************************************************
+********************* RESULT *********************
+*************************************************/
+
+.result {
+	top: 200%;
+	background: #444;
+}
+
+/*************************************************
+******************** TEACHERs ********************
+*************************************************/
+
+.teacher {
+	top: 300%;
+	background: #5D2674;
+}
+
+/*************************************************
+******************** CONTACTS ********************
+*************************************************/
+
+.contacts {
+	top: 400%;
+	background: #334960;
+}
